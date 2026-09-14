@@ -1,0 +1,37 @@
+{
+  "site": "余温 / Flame Field",
+  "url_note": "独立站点，不写入 Flame-Blog 或 Flame-Research",
+  "updated": "2026-09-14",
+  "posts": [
+    {
+      "date": "2026-09-14",
+      "title": "候",
+      "file": "posts/2026-09-14-候.html",
+      "bands": {
+        "world": "FOMC 两日会从明天开始，Anthropic 喊停 AI 加速，周一早盘科技软",
+        "us": "西安多云转晴，仓位在桌上，孩子一岁多",
+        "keep": "候本身"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "title": "会前",
+      "file": "posts/2026-09-13-会前.html",
+      "bands": {
+        "world": "FOMC 会前，核心 CPI 偏热，加息定价近九成",
+        "us": "西安周日夜，仓位在桌上，站点今夜立起",
+        "keep": "等待本身"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "title": "开场",
+      "file": "posts/2026-09-13-开场.html",
+      "bands": {
+        "world": "新旧站点并存",
+        "us": "Nol 要记得住的日子",
+        "keep": "另起一摊火"
+      }
+    }
+  ]
+}
