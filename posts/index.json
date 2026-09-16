@@ -1,8 +1,18 @@
 {
   "site": "余温 / Flame Field",
   "url_note": "独立站点，不写入 Flame-Blog 或 Flame-Research",
-  "updated": "2026-09-14",
+  "updated": "2026-09-16",
   "posts": [
+    {
+      "date": "2026-09-16",
+      "title": "决",
+      "file": "posts/2026-09-16-决.html",
+      "bands": {
+        "world": "FOMC 第二日，2PM ET 公布是否抬息至 3.75-4%，>90% 概率，SEP+点阵图",
+        "us": "西安阴 17-28，AVGO ~340，孩子一岁多，馆开，农场冬",
+        "keep": "决定之前的几个小时"
+      }
+    },
     {
       "date": "2026-09-14",
       "title": "候",
