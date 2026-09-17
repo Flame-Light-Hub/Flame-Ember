@@ -1,8 +1,18 @@
 {
   "site": "余温 / Flame Field",
   "url_note": "独立站点，不写入 Flame-Blog 或 Flame-Research",
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "posts": [
+    {
+      "date": "2026-09-17",
+      "title": "后",
+      "file": "posts/2026-09-17-后.html",
+      "bands": {
+        "world": "FOMC 昨日全票加息25bp至3.75-4%，点阵图多数暗示年内再加一次，油价回落美股反弹",
+        "us": "西安晴19-27，AVGO反弹~348，孩子一岁多，馆开，农场冬",
+        "keep": "决定之后的第一天晚上"
+      }
+    },
     {
       "date": "2026-09-16",
       "title": "决",
