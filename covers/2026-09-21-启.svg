@@ -1,1 +1,57 @@
-PLACEHOLDER
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2e38"/>
+      <stop offset="0.22" stop-color="#4a463c"/>
+      <stop offset="0.48" stop-color="#6a5e48"/>
+      <stop offset="0.72" stop-color="#3a3428"/>
+      <stop offset="1" stop-color="#1a1610"/>
+    </linearGradient>
+    <radialGradient id="volLight" cx="0.68" cy="0.12" r="0.62">
+      <stop offset="0" stop-color="#e8d4a8" stop-opacity="0.55"/>
+      <stop offset="0.28" stop-color="#c4a870" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#6a5838" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#1a1610" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shaft" x1="0.72" y1="0" x2="0.28" y2="1">
+      <stop offset="0" stop-color="#d8c490" stop-opacity="0.32"/>
+      <stop offset="0.45" stop-color="#8a7048" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#1a1610" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roadg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3228"/>
+      <stop offset="1" stop-color="#0e0c0a"/>
+    </linearGradient>
+    <radialGradient id="groundMist" cx="0.5" cy="0.92" r="0.55">
+      <stop offset="0" stop-color="#2a241c" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#0e0c0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#sky)"/>
+  <rect width="1200" height="750" fill="url(#volLight)"/>
+  <!-- dirty distant mountains, ochre-slate -->
+  <path d="M-60 380 L140 230 L310 320 L480 190 L660 300 L840 170 L1020 280 L1180 210 L1260 270 L1260 430 L-60 430 Z" fill="#2a261e"/>
+  <path d="M-40 400 L170 250 L340 340 L520 210 L700 330 L880 190 L1060 300 L1220 230 L1260 290 L1260 450 L-40 450 Z" fill="#1e1a14" opacity="0.95"/>
+  <path d="M0 420 L200 280 L370 360 L550 240 L730 350 L910 220 L1090 320 L1260 260 L1260 470 L0 470 Z" fill="#14110c"/>
+  <!-- road stretching into light -->
+  <path d="M360 750 L490 440 L630 435 L760 750 Z" fill="url(#roadg)"/>
+  <path d="M400 750 L520 465 L600 462 L690 750 Z" fill="#2a241c" opacity="0.75"/>
+  <path d="M450 750 L545 485 L575 483 L630 750 Z" fill="#3a3228" opacity="0.4"/>
+  <!-- volumetric shaft from upper right -->
+  <path d="M720 0 L980 0 L680 500 L420 500 Z" fill="url(#shaft)"/>
+  <path d="M780 20 L920 20 L760 440 L580 440 Z" fill="#e8d4a8" opacity="0.07"/>
+  <!-- soft sun disk behind haze -->
+  <circle cx="860" cy="95" r="48" fill="#f0e0b8" opacity="0.18"/>
+  <circle cx="860" cy="95" r="32" fill="#f8ecd0" opacity="0.1"/>
+  <!-- small traveler silhouette on road -->
+  <ellipse cx="555" cy="498" rx="11" ry="3.8" fill="#0a0806" opacity="0.55"/>
+  <path d="M548 498 L551 476 L554 460 L562 460 L565 476 L568 498 Z" fill="#12100c"/>
+  <path d="M553 460 L546 446 L556 440 L566 446 L560 460 Z" fill="#18150f"/>
+  <!-- low ground mist -->
+  <ellipse cx="600" cy="720" rx="520" ry="90" fill="url(#groundMist)"/>
+  <!-- faint dust particles in shaft -->
+  <circle cx="710" cy="210" r="1.2" fill="#e8d4a8" opacity="0.25"/>
+  <circle cx="780" cy="280" r="0.9" fill="#d8c490" opacity="0.2"/>
+  <circle cx="650" cy="320" r="1.1" fill="#c4a870" opacity="0.18"/>
+  <circle cx="820" cy="180" r="0.8" fill="#f0e0b8" opacity="0.22"/>
+</svg>
