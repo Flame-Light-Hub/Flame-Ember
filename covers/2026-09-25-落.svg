@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1814"/>
+      <stop offset="0.22" stop-color="#2e2820"/>
+      <stop offset="0.48" stop-color="#4a3c2c"/>
+      <stop offset="0.72" stop-color="#241c14"/>
+      <stop offset="1" stop-color="#0a0806"/>
+    </linearGradient>
+    <radialGradient id="volLight" cx="0.58" cy="0.08" r="0.72">
+      <stop offset="0" stop-color="#d4b878" stop-opacity="0.42"/>
+      <stop offset="0.28" stop-color="#a88848" stop-opacity="0.18"/>
+      <stop offset="0.58" stop-color="#4a3820" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#0a0806" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shaft" x1="0.58" y1="0" x2="0.38" y2="1">
+      <stop offset="0" stop-color="#c8b070" stop-opacity="0.24"/>
+      <stop offset="0.4" stop-color="#6a5028" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#0a0806" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roadg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#262018"/>
+      <stop offset="1" stop-color="#060504"/>
+    </linearGradient>
+    <radialGradient id="groundMist" cx="0.48" cy="0.92" r="0.58">
+      <stop offset="0" stop-color="#1e1a14" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#060504" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#sky)"/>
+  <path d="M-30 400 L160 280 L300 330 L460 240 L620 310 L800 220 L960 300 L1180 250 L1230 440 L-30 440 Z" fill="#16120e"/>
+  <path d="M-50 420 L120 320 L260 370 L430 290 L590 360 L760 270 L940 340 L1200 290 L1250 470 L-50 470 Z" fill="#12100c" opacity="0.88"/>
+  <path d="M-10 450 L180 360 L340 410 L520 330 L700 400 L880 320 L1080 380 L1280 340 L1280 520 L-10 520 Z" fill="#0e0c0a"/>
+  <path d="M240 750 L440 450 L620 445 L780 750 Z" fill="url(#roadg)"/>
+  <path d="M280 750 L470 470 L580 468 L680 750 Z" fill="#1e1a14" opacity="0.75"/>
+  <path d="M340 750 L500 490 L540 488 L600 750 Z" fill="#2a2620" opacity="0.35"/>
+  <path d="M620 0 L980 0 L720 540 L400 540 Z" fill="url(#shaft)"/>
+  <path d="M680 8 L920 8 L760 480 L560 480 Z" fill="#d0b878" opacity="0.07"/>
+  <circle cx="780" cy="110" r="68" fill="#dcc890" opacity="0.13"/>
+  <circle cx="780" cy="110" r="38" fill="#e8d8a8" opacity="0.07"/>
+  <ellipse cx="505" cy="505" rx="9" ry="3.2" fill="#040302" opacity="0.55"/>
+  <path d="M498 505 L501 482 L505 466 L512 466 L516 482 L519 505 Z" fill="#0a0806"/>
+  <path d="M504 466 L496 452 L506 446 L516 452 L510 466 Z" fill="#100e0a"/>
+  <ellipse cx="540" cy="660" rx="480" ry="100" fill="url(#groundMist)"/>
+  <path d="M-60 390 L60 300 L140 340 L-60 420 Z" fill="#181410" opacity="0.5"/>
+</svg>
