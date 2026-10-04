@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyX" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14161a"/>
+      <stop offset="0.42" stop-color="#3d3a32"/>
+      <stop offset="0.72" stop-color="#6a5c45"/>
+      <stop offset="1" stop-color="#8a7354"/>
+    </linearGradient>
+    <linearGradient id="gap" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#e6d2a4" stop-opacity="0.05"/>
+      <stop offset="0.35" stop-color="#f0d7a2" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#c4a06a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roadX" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c4d3c"/>
+      <stop offset="1" stop-color="#2a241c"/>
+    </linearGradient>
+    <radialGradient id="dust" cx="0.5" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#c9b48a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#c9b48a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyX)"/>
+  <polygon points="0,430 180,250 340,390 520,180 690,360 860,210 1080,400 1200,280 1200,750 0,750" fill="#2c2822" opacity="0.9"/>
+  <polygon points="0,500 210,340 400,470 560,290 760,450 980,320 1200,460 1200,750 0,750" fill="#3a342b"/>
+  <polygon points="420,0 560,0 640,750 470,750" fill="url(#gap)"/>
+  <polygon points="480,210 560,120 610,240 700,160 760,280 640,360 520,300" fill="#6e624f" opacity="0.55"/>
+  <ellipse cx="600" cy="430" rx="220" ry="80" fill="url(#dust)"/>
+  <path d="M520,750 L585,430 L655,430 L760,750 Z" fill="url(#roadX)"/>
+  <path d="M590,430 L600,750" stroke="#8a7560" stroke-width="2" opacity="0.35"/>
+  <path d="M640,430 L700,750" stroke="#3a3128" stroke-width="3" opacity="0.4"/>
+  <g fill="#1c1916">
+    <polygon points="70,560 160,410 250,560"/>
+    <polygon points="180,590 300,430 410,600"/>
+    <polygon points="860,580 980,420 1120,590"/>
+    <polygon points="980,610 1100,470 1200,620 1200,750 900,750"/>
+  </g>
+  <g opacity="0.55" fill="#241f1a">
+    <rect x="96" y="548" width="7" height="28"/>
+    <rect x="1040" y="552" width="6" height="22"/>
+    <rect x="300" y="560" width="5" height="18"/>
+  </g>
+  <g transform="translate(612,548)">
+    <ellipse cx="0" cy="28" rx="10" ry="3" fill="#120f0c" opacity="0.55"/>
+    <path d="M-3,8 L-1,-6 L3,-6 L4,10 L1,22 L-2,22 Z" fill="#1a1612"/>
+    <circle cx="1" cy="-10" r="3.2" fill="#1a1612"/>
+    <path d="M-1,-4 L-8,4" stroke="#1a1612" stroke-width="1.4"/>
+  </g>
+  <text x="48" y="700" fill="#cbb892" font-family="Georgia, serif" font-size="18" opacity="0.7">2026.10.04 · 隙</text>
+</svg>
