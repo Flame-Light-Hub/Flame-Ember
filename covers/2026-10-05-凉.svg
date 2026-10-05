@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c242c"/>
+      <stop offset="0.38" stop-color="#4a5560"/>
+      <stop offset="0.68" stop-color="#8a7a62"/>
+      <stop offset="1" stop-color="#c4ad86"/>
+    </linearGradient>
+    <linearGradient id="shaft" x1="0.15" y1="0" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#f2e2bc" stop-opacity="0.05"/>
+      <stop offset="0.4" stop-color="#efe0b4" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#d7c39a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roadL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a5b48"/>
+      <stop offset="1" stop-color="#2e281f"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="0.32" cy="0.42" r="0.46">
+      <stop offset="0" stop-color="#e7d7b4" stop-opacity="0.33"/>
+      <stop offset="1" stop-color="#e7d7b4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyL)"/>
+  <polygon points="0,360 90,300 210,390 340,240 470,360 610,200 760,340 900,230 1040,370 1200,260 1200,750 0,750" fill="#2a3136" opacity="0.92"/>
+  <polygon points="0,470 160,360 310,450 480,330 640,460 820,350 980,470 1200,390 1200,750 0,750" fill="#3c4038"/>
+  <polygon points="0,560 220,470 400,540 620,450 840,560 1040,490 1200,540 1200,750 0,750" fill="#4a4338"/>
+  <polygon points="140,0 310,0 560,750 250,750" fill="url(#shaft)"/>
+  <ellipse cx="380" cy="340" rx="280" ry="160" fill="url(#haze)"/>
+  <polygon points="430,620 600,500 770,620 1200,690 1200,750 0,750 0,680" fill="url(#roadL)"/>
+  <polygon points="560,500 590,620 610,620 578,500" fill="#1c1915" opacity="0.45"/>
+  <g fill="#1a1714">
+    <ellipse cx="548" cy="612" rx="7" ry="3"/>
+    <path d="M542,612 l4,-28 6,2 -2,26 z"/>
+    <path d="M544,588 q4,-10 8,-2 l2,8 -8,2 z"/>
+    <path d="M540,598 l-8,10 3,2 6,-8 z"/>
+  </g>
+  <g fill="#6d6254" opacity="0.35">
+    <circle cx="180" cy="180" r="1.2"/>
+    <circle cx="860" cy="140" r="1"/>
+    <circle cx="990" cy="210" r="1.4"/>
+    <circle cx="240" cy="260" r="0.8"/>
+  </g>
+</svg>
