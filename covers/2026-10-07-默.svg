@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14181c"/>
+      <stop offset="0.38" stop-color="#2a3330"/>
+      <stop offset="0.7" stop-color="#6d6452"/>
+      <stop offset="1" stop-color="#b7a07a"/>
+    </linearGradient>
+    <linearGradient id="shaftM" x1="0.18" y1="0" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#efe2c2" stop-opacity="0.05"/>
+      <stop offset="0.4" stop-color="#e4d2a4" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#cbb88a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roadM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5c5344"/>
+      <stop offset="1" stop-color="#1c1914"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="0.46" cy="0.55" r="0.42">
+      <stop offset="0" stop-color="#d9c7a0" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#d9c7a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyM)"/>
+  <polygon points="0,280 160,210 300,300 470,160 640,290 820,190 980,270 1200,210 1200,750 0,750" fill="#1e2422" opacity="0.96"/>
+  <polygon points="0,390 220,300 400,380 590,270 780,390 980,320 1200,370 1200,750 0,750" fill="#34362e"/>
+  <polygon points="0,500 180,430 360,490 560,410 760,500 980,450 1200,480 1200,750 0,750" fill="#4a463c"/>
+  <polygon points="140,0 360,0 620,750 340,750" fill="url(#shaftM)"/>
+  <ellipse cx="520" cy="460" rx="280" ry="110" fill="url(#haze)"/>
+  <polygon points="430,655 600,470 790,655 1200,710 1200,750 0,750 0,700" fill="url(#roadM)"/>
+  <polygon points="600,470 628,640 652,640 622,470" fill="#161410" opacity="0.35"/>
+  <rect x="586" y="548" width="9" height="46" fill="#1a1814"/>
+  <rect x="574" y="548" width="34" height="6" fill="#242018"/>
+  <g fill="#12100e">
+    <ellipse cx="612" cy="608" rx="7" ry="11"/>
+    <rect x="608" y="616" width="8" height="22" rx="1"/>
+    <polygon points="608,622 590,640 596,642 610,628"/>
+    <polygon points="616,624 634,642 628,644 614,628"/>
+  </g>
+  <ellipse cx="612" cy="642" rx="22" ry="4" fill="#0c0b09" opacity="0.45"/>
+  <g fill="#2a261e" opacity="0.55">
+    <circle cx="210" cy="180" r="1.2"/>
+    <circle cx="880" cy="140" r="1"/>
+    <circle cx="1040" cy="210" r="1.4"/>
+    <circle cx="160" cy="240" r="0.8"/>
+  </g>
+</svg>
