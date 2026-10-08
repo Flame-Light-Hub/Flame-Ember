@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a140e"/>
+      <stop offset="0.42" stop-color="#4a3826"/>
+      <stop offset="0.72" stop-color="#8a6844"/>
+      <stop offset="1" stop-color="#c4a06a"/>
+    </linearGradient>
+    <linearGradient id="shaftR" x1="0.82" y1="0" x2="0.38" y2="1">
+      <stop offset="0" stop-color="#f0ddb4" stop-opacity="0.04"/>
+      <stop offset="0.45" stop-color="#e6c48a" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#b89462" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="roadR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a5340"/>
+      <stop offset="1" stop-color="#1a140f"/>
+    </linearGradient>
+    <radialGradient id="dust" cx="0.62" cy="0.58" r="0.4">
+      <stop offset="0" stop-color="#d7b888" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#d7b888" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyR)"/>
+  <polygon points="0,250 180,190 340,280 520,150 700,260 860,180 1040,250 1200,190 1200,750 0,750" fill="#241910" opacity="0.95"/>
+  <polygon points="0,360 200,300 420,370 640,280 860,360 1060,310 1200,350 1200,750 0,750" fill="#3c2e22"/>
+  <polygon points="0,470 240,410 460,460 700,400 920,470 1100,430 1200,455 1200,750 0,750" fill="#5c4634"/>
+  <polygon points="760,0 1040,0 700,750 430,750" fill="url(#shaftR)"/>
+  <ellipse cx="740" cy="430" rx="300" ry="120" fill="url(#dust)"/>
+  <!-- distant city gate, low, unlit -->
+  <rect x="868" y="318" width="92" height="78" fill="#2a2118"/>
+  <polygon points="858,318 914,286 980,318" fill="#3a2c20"/>
+  <rect x="900" y="348" width="22" height="48" fill="#140e0a"/>
+  <rect x="832" y="338" width="14" height="58" fill="#241c14"/>
+  <rect x="978" y="344" width="12" height="52" fill="#241c14"/>
+  <polygon points="500,640 760,430 1040,640 1200,690 1200,750 180,750 240,680" fill="url(#roadR)"/>
+  <polygon points="760,430 788,610 812,610 782,430" fill="#120e0a" opacity="0.4"/>
+  <!-- cart ruts -->
+  <path d="M300,720 C480,600 640,520 760,440" stroke="#2a2018" stroke-width="3" fill="none" opacity="0.45"/>
+  <path d="M360,730 C540,610 700,530 820,450" stroke="#2a2018" stroke-width="2" fill="none" opacity="0.35"/>
+  <!-- walking figure, bundle on back, facing the gate -->
+  <g fill="#1a140f">
+    <ellipse cx="612" cy="612" rx="16" ry="4" opacity="0.45"/>
+    <path d="M604,548 l8,-28 10,2 -4,26 z"/>
+    <circle cx="614" cy="512" r="7"/>
+    <path d="M606,548 l-10,28 6,2 8,-22 z"/>
+    <path d="M618,552 l12,26 -6,2 -8,-22 z"/>
+    <path d="M598,536 l-16,6 2,5 14,-4 z"/>
+    <path d="M622,534 q14,6 16,18 l-6,2 q-2,-10 -12,-16 z"/>
+  </g>
+  <g fill="#3d3226" opacity="0.7">
+    <ellipse cx="180" cy="560" rx="40" ry="8"/>
+    <ellipse cx="1040" cy="590" rx="50" ry="9"/>
+  </g>
+</svg>
