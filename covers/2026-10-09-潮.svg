@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141810"/>
+      <stop offset="0.35" stop-color="#3a4030"/>
+      <stop offset="0.68" stop-color="#8a7348"/>
+      <stop offset="1" stop-color="#c4b088"/>
+    </linearGradient>
+    <linearGradient id="shaftT" x1="0.18" y1="0" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#f2e2bc" stop-opacity="0.05"/>
+      <stop offset="0.4" stop-color="#e2c07a" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#a88858" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="seaT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a342c"/>
+      <stop offset="1" stop-color="#121610"/>
+    </linearGradient>
+    <radialGradient id="mistT" cx="0.42" cy="0.55" r="0.38">
+      <stop offset="0" stop-color="#d8c49a" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#d8c49a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyT)"/>
+  <polygon points="0,210 160,250 320,170 500,240 680,160 860,230 1040,180 1200,220 1200,750 0,750" fill="#1c2218" opacity="0.92"/>
+  <polygon points="820,120 1200,80 1200,460 980,420 860,280" fill="#1a221c"/>
+  <polygon points="900,150 1200,110 1200,390 1040,340" fill="#243028" opacity="0.85"/>
+  <polygon points="0,340 220,300 420,360 640,290 820,350 980,310 1200,360 1200,750 0,750" fill="#3e4634"/>
+  <polygon points="0,430 260,390 480,450 720,400 960,460 1200,420 1200,750 0,750" fill="#5c5640"/>
+  <polygon points="180,0 460,0 620,750 300,750" fill="url(#shaftT)"/>
+  <ellipse cx="520" cy="440" rx="280" ry="110" fill="url(#mistT)"/>
+  <polygon points="0,500 280,470 520,500 860,460 1200,510 1200,575 0,590" fill="url(#seaT)"/>
+  <path d="M0,548 C180,532 340,556 520,540 C740,522 960,550 1200,528" stroke="#8a9a84" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M40,562 C220,548 400,570 600,554 C820,536 1000,566 1200,548" stroke="#6a7a68" stroke-width="1.5" fill="none" opacity="0.28"/>
+  <polygon points="380,700 620,500 860,700 1080,740 1200,750 160,750" fill="#4a4030"/>
+  <polygon points="620,500 648,680 676,680 646,500" fill="#1a1610" opacity="0.35"/>
+  <path d="M240,730 C400,640 520,580 620,510" stroke="#2a2418" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M300,738 C460,650 560,590 668,518" stroke="#2a2418" stroke-width="2" fill="none" opacity="0.32"/>
+  <ellipse cx="560" cy="640" rx="46" ry="8" fill="#cbb892" opacity="0.22"/>
+  <ellipse cx="700" cy="690" rx="28" ry="5" fill="#cbb892" opacity="0.16"/>
+  <g fill="#1a140e">
+    <ellipse cx="548" cy="612" rx="7" ry="9"/>
+    <path d="M542,620 L536,656 L544,656 L548,632 L554,656 L562,654 L552,620 Z"/>
+    <path d="M538,628 L522,646 L526,650 L544,634 Z"/>
+    <path d="M546,648 L538,668 L544,670 M554,648 L560,668 L554,670"/>
+  </g>
+  <rect x="0" y="700" width="1200" height="50" fill="#100e0a" opacity="0.35"/>
+</svg>
