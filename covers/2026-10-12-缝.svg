@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c0e10"/>
+      <stop offset="0.35" stop-color="#2c2a24"/>
+      <stop offset="0.65" stop-color="#6a5e48"/>
+      <stop offset="1" stop-color="#9a8868"/>
+    </linearGradient>
+    <linearGradient id="shaftS" x1="0.35" y1="0" x2="0.48" y2="1">
+      <stop offset="0" stop-color="#f0e0c0" stop-opacity="0.02"/>
+      <stop offset="0.35" stop-color="#d0b888" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#5a4a32" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="dustS" cx="0.45" cy="0.6" r="0.4">
+      <stop offset="0" stop-color="#c8b898" stop-opacity="0.28"/>
+      <stop offset="0.7" stop-color="#887868" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#403830" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="roadS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3e3c32"/>
+      <stop offset="1" stop-color="#1c1a14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyS)"/>
+  <polygon points="0,180 200,220 420,140 640,210 860,150 1080,190 1200,160 1200,750 0,750" fill="#101210" opacity="0.9"/>
+  <polygon points="640,90 1200,50 1200,420 900,360 720,180" fill="#121816"/>
+  <polygon points="780,110 1200,70 1200,320 980,280" fill="#1c2422" opacity="0.8"/>
+  <ellipse cx="580" cy="400" rx="380" ry="160" fill="url(#dustS)"/>
+  <polygon points="0,320 240,290 480,340 720,280 960,330 1200,300 1200,750 0,750" fill="#323028" opacity="0.68"/>
+  <polygon points="0,410 300,380 540,430 800,390 1060,440 1200,410 1200,750 0,750" fill="#524e3e" opacity="0.62"/>
+  <!-- seam of light -->
+  <polygon points="420,0 520,0 580,750 380,750" fill="url(#shaftS)"/>
+  <path d="M460,40 L500,80 L490,120 L510,200 L470,280 L500,400 L480,520 L510,680" stroke="#e8d8a8" stroke-width="1.5" fill="none" opacity="0.35"/>
+  <polygon points="0,480 320,450 580,490 860,450 1200,500 1200,580 0,590" fill="url(#roadS)"/>
+  <path d="M0,540 C200,525 400,550 600,535 C820,518 1000,545 1200,530" stroke="#7a8a70" stroke-width="1.6" fill="none" opacity="0.25"/>
+  <path d="M30,555 C240,542 420,565 620,548 C840,530 1020,558 1200,542" stroke="#5a6a5c" stroke-width="1" fill="none" opacity="0.18"/>
+  <polygon points="300,740 540,510 780,740 1020,755 1200,750 120,750" fill="#3e382a"/>
+  <path d="M180,745 C360,650 480,590 540,520" stroke="#161410" stroke-width="2.5" fill="none" opacity="0.38"/>
+  <ellipse cx="500" cy="630" rx="32" ry="5" fill="#b8a080" opacity="0.12"/>
+  <g fill="#0c0a06" opacity="0.82">
+    <ellipse cx="482" cy="588" rx="5" ry="7"/>
+    <path d="M477,596 L472,628 L479,628 L483,608 L488,628 L494,626 L486,596 Z"/>
+    <path d="M474,604 L460,620 L464,624 L480,610 Z"/>
+    <path d="M481,620 L474,638 L479,640 M488,620 L493,638 L488,640"/>
+  </g>
+  <rect x="0" y="720" width="1200" height="30" fill="#080604" opacity="0.3"/>
+</svg>
