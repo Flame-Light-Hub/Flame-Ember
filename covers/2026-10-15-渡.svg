@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0c0e"/>
+      <stop offset="0.3" stop-color="#2a241c"/>
+      <stop offset="0.6" stop-color="#5a4a32"/>
+      <stop offset="0.85" stop-color="#8a6a4a"/>
+      <stop offset="1" stop-color="#4a3a28"/>
+    </linearGradient>
+    <linearGradient id="shaftD" x1="0.4" y1="0" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#e8d8b0" stop-opacity="0.05"/>
+      <stop offset="0.4" stop-color="#c09860" stop-opacity="0.42"/>
+      <stop offset="0.75" stop-color="#7a5a38" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#2a1e14" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hazeD" cx="0.55" cy="0.58" r="0.45">
+      <stop offset="0" stop-color="#b09068" stop-opacity="0.25"/>
+      <stop offset="0.65" stop-color="#6a5438" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#1a140c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pathD" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3020"/>
+      <stop offset="1" stop-color="#14100c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyD)"/>
+  <!-- distant mountains -->
+  <polygon points="0,260 180,160 360,220 540,120 720,180 900,140 1080,200 1200,170 1200,750 0,750" fill="#0c0e0c" opacity="0.96"/>
+  <polygon points="400,140 640,70 860,150 740,210 500,190" fill="#121410" opacity="0.75"/>
+  <!-- volumetric light -->
+  <polygon points="320,0 460,0 720,750 420,750" fill="url(#shaftD)" opacity="0.75"/>
+  <polygon points="560,0 680,0 860,750 600,750" fill="url(#shaftD)" opacity="0.4"/>
+  <!-- haze -->
+  <ellipse cx="620" cy="470" rx="500" ry="220" fill="url(#hazeD)"/>
+  <!-- mid hills -->
+  <polygon points="0,390 240,350 460,410 680,360 900,400 1120,370 1200,390 1200,750 0,750" fill="#28241c" opacity="0.7"/>
+  <!-- bridge / path crossing -->
+  <polygon points="420,480 780,480 860,750 340,750" fill="url(#pathD)" opacity="0.92"/>
+  <path d="M480 500 Q600 540 720 590 L760 750 L440 750 Z" fill="#322c20" opacity="0.55"/>
+  <!-- bridge structure lines -->
+  <path d="M500 510 L700 510" stroke="#6a5a40" stroke-width="3" opacity="0.5"/>
+  <path d="M520 540 L680 540" stroke="#5a4a30" stroke-width="2" opacity="0.4"/>
+  <path d="M540 570 L660 570" stroke="#4a3a28" stroke-width="1.5" opacity="0.35"/>
+  <!-- small figure -->
+  <g transform="translate(640, 560)">
+    <ellipse cx="0" cy="6" rx="5" ry="11" fill="#080604"/>
+    <path d="M-3 16 L-5 46 L5 46 L3 16 Z" fill="#080604"/>
+    <path d="M-7 26 L-16 34 L-5 30" fill="#080604"/>
+    <path d="M7 26 L16 34 L5 30" fill="#080604"/>
+  </g>
+  <!-- foreground -->
+  <path d="M0 680 Q300 640 600 670 T1200 690 L1200 750 L0 750 Z" fill="#1a1610" opacity="0.6"/>
+</svg>
