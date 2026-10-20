@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c140c"/>
+      <stop offset="0.25" stop-color="#3c2c18"/>
+      <stop offset="0.5" stop-color="#6a4a28"/>
+      <stop offset="0.75" stop-color="#8a6840"/>
+      <stop offset="1" stop-color="#4a3420"/>
+    </linearGradient>
+    <linearGradient id="shaftM" x1="0.3" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#f0d8a0" stop-opacity="0.08"/>
+      <stop offset="0.35" stop-color="#c09050" stop-opacity="0.5"/>
+      <stop offset="0.7" stop-color="#7a5030" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#140c08" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hazeM" cx="0.45" cy="0.62" r="0.5">
+      <stop offset="0" stop-color="#b09060" stop-opacity="0.25"/>
+      <stop offset="0.6" stop-color="#5a4028" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#0a0806" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pathM" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3024"/>
+      <stop offset="1" stop-color="#16120c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyM)"/>
+  <!-- distant mountains at dusk -->
+  <polygon points="0,280 160,150 340,210 520,110 700,190 880,130 1060,200 1200,160 1200,750 0,750" fill="#0a0c08" opacity="0.95"/>
+  <polygon points="400,130 660,60 880,170 740,220 500,200" fill="#101208" opacity="0.7"/>
+  <!-- volumetric dusk light -->
+  <polygon points="280,0 420,0 680,750 380,750" fill="url(#shaftM)" opacity="0.8"/>
+  <polygon points="540,0 660,0 820,750 580,750" fill="url(#shaftM)" opacity="0.45"/>
+  <!-- haze -->
+  <ellipse cx="560" cy="520" rx="560" ry="260" fill="url(#hazeM)"/>
+  <!-- mid hills -->
+  <polygon points="0,440 180,400 400,450 620,410 840,440 1060,420 1200,440 1200,750 0,750" fill="#261e16" opacity="0.75"/>
+  <!-- road at dusk -->
+  <polygon points="320,540 880,540 960,750 240,750" fill="url(#pathM)" opacity="0.9"/>
+  <path d="M400 560 Q580 600 760 660 L800 750 L360 750 Z" fill="#2e261c" opacity="0.6"/>
+  <!-- tracks -->
+  <path d="M460 580 L540 750" stroke="#241c14" stroke-width="3" opacity="0.45" fill="none"/>
+  <path d="M620 590 L700 750" stroke="#241c14" stroke-width="2" opacity="0.35" fill="none"/>
+  <!-- small figure walking into dusk light -->
+  <g transform="translate(620, 620)">
+    <ellipse cx="0" cy="3" rx="4" ry="8" fill="#050302"/>
+    <path d="M-2 10 L-6 42 L6 42 L2 10 Z" fill="#050302"/>
+    <path d="M-4 18 L-13 28 L-2 24" fill="#050302"/>
+    <path d="M4 18 L14 26 L3 22" fill="#050302"/>
+  </g>
+  <!-- dust in light -->
+  <circle cx="460" cy="300" r="1.1" fill="#d0b080" opacity="0.45"/>
+  <circle cx="700" cy="260" r="0.9" fill="#b09060" opacity="0.35"/>
+  <circle cx="540" cy="340" r="0.7" fill="#e0c8a0" opacity="0.3"/>
+</svg>
