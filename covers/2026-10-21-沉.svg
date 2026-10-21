@@ -28,28 +28,31 @@
   <polygon points="0,320 140,180 320,240 500,140 680,220 860,160 1040,230 1200,190 1200,750 0,750" fill="#0c0a08" opacity="0.9"/>
   <polygon points="360,160 600,90 820,200 680,250 440,220" fill="#14100c" opacity="0.65"/>
   <!-- volumetric light sinking low -->
-  <polygon points="320,80 480,60 720,750 420,750" fill="url(#shaftS)" opacity="0.7"/>
-  <polygon points="560,100 700,80 860,750 600,750" fill="url(#shaftS)" opacity="0.4"/>
-  <!-- haze layer -->
-  <ellipse cx="600" cy="560" rx="620" ry="280" fill="url(#hazeS)"/>
-  <!-- mid hills -->
-  <polygon points="0,480 200,440 420,490 640,450 860,480 1080,460 1200,480 1200,750 0,750" fill="#1e1610" opacity="0.8"/>
-  <!-- road descending into the light -->
-  <polygon points="280,500 920,500 1000,750 200,750" fill="url(#pathS)" opacity="0.95"/>
-  <path d="M380 520 Q560 580 740 680 L780 750 L320 750 Z" fill="#221a12" opacity="0.55"/>
-  <!-- tracks sinking -->
-  <path d="M440 540 L520 750" stroke="#1a140e" stroke-width="4" opacity="0.5" fill="none"/>
-  <path d="M600 550 L680 750" stroke="#1a140e" stroke-width="2.5" opacity="0.4" fill="none"/>
-  <!-- small figure walking deeper into the sinking light -->
-  <g transform="translate(580, 640)">
-    <ellipse cx="0" cy="2" rx="3.5" ry="7" fill="#040201"/>
-    <path d="M-1.5 8 L-5 38 L5 38 L1.5 8 Z" fill="#040201"/>
-    <path d="M-3 16 L-11 26 L-1 22" fill="#040201"/>
-    <path d="M3 16 L12 24 L2 20" fill="#040201"/>
+  <ellipse cx="620" cy="280" rx="180" ry="220" fill="url(#shaftS)"/>
+  <ellipse cx="580" cy="420" rx="320" ry="160" fill="url(#hazeS)"/>
+  <!-- dirty road with deep ruts -->
+  <path d="M180,750 Q420,520 620,380 Q780,280 980,220" fill="none" stroke="#1a140e" stroke-width="90" opacity="0.85"/>
+  <path d="M200,750 Q440,530 640,390 Q790,290 990,230" fill="none" stroke="#2a2018" stroke-width="28" opacity="0.5"/>
+  <path d="M160,750 Q400,510 600,370 Q770,270 970,210" fill="none" stroke="#0e0a06" stroke-width="12" opacity="0.7"/>
+  <!-- dry grass clumps -->
+  <g opacity="0.4" fill="#3a2c1c">
+    <ellipse cx="280" cy="620" rx="40" ry="12"/>
+    <ellipse cx="420" cy="560" rx="28" ry="9"/>
+    <ellipse cx="520" cy="480" rx="35" ry="10"/>
+    <ellipse cx="720" cy="360" rx="22" ry="8"/>
   </g>
-  <!-- dust motes in the low light -->
-  <circle cx="480" cy="420" r="1.2" fill="#c09060" opacity="0.3"/>
-  <circle cx="620" cy="380" r="0.8" fill="#d0a070" opacity="0.25"/>
-  <circle cx="710" cy="460" r="1" fill="#b08050" opacity="0.2"/>
-  <circle cx="540" cy="500" r="0.6" fill="#a07040" opacity="0.35"/>
+  <!-- small traveler silhouette facing the sinking light -->
+  <g transform="translate(540,430)">
+    <ellipse cx="0" cy="28" rx="14" ry="6" fill="#0a0806" opacity="0.5"/>
+    <path d="M-6,22 L-4,8 Q0,-2 4,8 L6,22 Z" fill="#1a1410"/>
+    <circle cx="0" cy="2" r="5" fill="#12100c"/>
+    <path d="M-3,8 L-8,18 M3,8 L9,16" stroke="#1a1410" stroke-width="2.5" fill="none"/>
+  </g>
+  <!-- extra dirt texture -->
+  <g opacity="0.15" fill="#4a3828">
+    <circle cx="310" cy="680" r="3"/>
+    <circle cx="450" cy="640" r="2"/>
+    <circle cx="590" cy="520" r="2.5"/>
+    <circle cx="710" cy="440" r="2"/>
+  </g>
 </svg>
