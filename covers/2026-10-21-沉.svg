@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e0a08"/>
+      <stop offset="0.3" stop-color="#2a1e14"/>
+      <stop offset="0.6" stop-color="#4a3828"/>
+      <stop offset="0.85" stop-color="#3a2c1c"/>
+      <stop offset="1" stop-color="#1a120c"/>
+    </linearGradient>
+    <linearGradient id="shaftS" x1="0.4" y1="0.1" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#d8b080" stop-opacity="0.05"/>
+      <stop offset="0.4" stop-color="#a07040" stop-opacity="0.35"/>
+      <stop offset="0.75" stop-color="#503020" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#0a0604" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hazeS" cx="0.5" cy="0.7" r="0.45">
+      <stop offset="0" stop-color="#806040" stop-opacity="0.2"/>
+      <stop offset="0.7" stop-color="#3a2818" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#080604" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pathS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2218"/>
+      <stop offset="1" stop-color="#0e0a06"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyS)"/>
+  <!-- distant mountains sinking into haze -->
+  <polygon points="0,320 140,180 320,240 500,140 680,220 860,160 1040,230 1200,190 1200,750 0,750" fill="#0c0a08" opacity="0.9"/>
+  <polygon points="360,160 600,90 820,200 680,250 440,220" fill="#14100c" opacity="0.65"/>
+  <!-- volumetric light sinking low -->
+  <polygon points="320,80 480,60 720,750 420,750" fill="url(#shaftS)" opacity="0.7"/>
+  <polygon points="560,100 700,80 860,750 600,750" fill="url(#shaftS)" opacity="0.4"/>
+  <!-- haze layer -->
+  <ellipse cx="600" cy="560" rx="620" ry="280" fill="url(#hazeS)"/>
+  <!-- mid hills -->
+  <polygon points="0,480 200,440 420,490 640,450 860,480 1080,460 1200,480 1200,750 0,750" fill="#1e1610" opacity="0.8"/>
+  <!-- road descending into the light -->
+  <polygon points="280,500 920,500 1000,750 200,750" fill="url(#pathS)" opacity="0.95"/>
+  <path d="M380 520 Q560 580 740 680 L780 750 L320 750 Z" fill="#221a12" opacity="0.55"/>
+  <!-- tracks sinking -->
+  <path d="M440 540 L520 750" stroke="#1a140e" stroke-width="4" opacity="0.5" fill="none"/>
+  <path d="M600 550 L680 750" stroke="#1a140e" stroke-width="2.5" opacity="0.4" fill="none"/>
+  <!-- small figure walking deeper into the sinking light -->
+  <g transform="translate(580, 640)">
+    <ellipse cx="0" cy="2" rx="3.5" ry="7" fill="#040201"/>
+    <path d="M-1.5 8 L-5 38 L5 38 L1.5 8 Z" fill="#040201"/>
+    <path d="M-3 16 L-11 26 L-1 22" fill="#040201"/>
+    <path d="M3 16 L12 24 L2 20" fill="#040201"/>
+  </g>
+  <!-- dust motes in the low light -->
+  <circle cx="480" cy="420" r="1.2" fill="#c09060" opacity="0.3"/>
+  <circle cx="620" cy="380" r="0.8" fill="#d0a070" opacity="0.25"/>
+  <circle cx="710" cy="460" r="1" fill="#b08050" opacity="0.2"/>
+  <circle cx="540" cy="500" r="0.6" fill="#a07040" opacity="0.35"/>
+</svg>
