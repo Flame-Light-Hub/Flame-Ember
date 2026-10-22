@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c0a08"/>
+      <stop offset="0.25" stop-color="#1e1610"/>
+      <stop offset="0.5" stop-color="#3a2c20"/>
+      <stop offset="0.75" stop-color="#2a2018"/>
+      <stop offset="1" stop-color="#120e0a"/>
+    </linearGradient>
+    <linearGradient id="shaftL" x1="0.35" y1="0.05" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#c8a070" stop-opacity="0.08"/>
+      <stop offset="0.35" stop-color="#806040" stop-opacity="0.4"/>
+      <stop offset="0.7" stop-color="#402810" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#080604" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hazeL" cx="0.5" cy="0.65" r="0.5">
+      <stop offset="0" stop-color="#705030" stop-opacity="0.25"/>
+      <stop offset="0.6" stop-color="#2a1c10" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#060402" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pathL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241c14"/>
+      <stop offset="1" stop-color="#0a0806"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyL)"/>
+  <!-- distant mountains low and heavy -->
+  <polygon points="0,280 180,160 360,220 540,120 720,190 900,140 1080,210 1200,170 1200,750 0,750" fill="#0a0806" opacity="0.92"/>
+  <polygon points="300,140 540,70 780,180 620,230 380,200" fill="#12100c" opacity="0.7"/>
+  <!-- low volumetric light -->
+  <polygon points="280,60 440,40 680,750 380,750" fill="url(#shaftL)" opacity="0.65"/>
+  <polygon points="520,90 660,70 820,750 560,750" fill="url(#shaftL)" opacity="0.35"/>
+  <!-- haze -->
+  <ellipse cx="600" cy="520" rx="650" ry="260" fill="url(#hazeL)"/>
+  <!-- mid ground -->
+  <polygon points="0,460 180,420 400,470 620,430 840,460 1060,440 1200,460 1200,750 0,750" fill="#1a1410" opacity="0.85"/>
+  <!-- road descending low -->
+  <polygon points="240,480 960,480 1040,750 160,750" fill="url(#pathL)" opacity="0.96"/>
+  <path d="M340 500 Q520 560 700 660 L740 750 L280 750 Z" fill="#1e1610" opacity="0.6"/>
+  <!-- tracks -->
+  <path d="M400 520 L480 750" stroke="#14100c" stroke-width="5" opacity="0.55" fill="none"/>
+  <path d="M560 530 L640 750" stroke="#14100c" stroke-width="3" opacity="0.4" fill="none"/>
+  <!-- small figure lower on the road -->
+  <g transform="translate(540, 680)">
+    <ellipse cx="0" cy="1" rx="3" ry="6" fill="#020101"/>
+    <path d="M-1 6 L-4 34 L4 34 L1 6 Z" fill="#020101"/>
+    <path d="M-2 14 L-9 22 L0 18" fill="#020101"/>
+    <path d="M2 14 L10 20 L1 16" fill="#020101"/>
+  </g>
+  <!-- dust in the low light -->
+  <circle cx="420" cy="420" r="1.2" fill="#a08060" opacity="0.4"/>
+  <circle cx="680" cy="480" r="0.8" fill="#806040" opacity="0.3"/>
+  <circle cx="520" cy="380" r="1" fill="#c0a080" opacity="0.25"/>
+</svg>
