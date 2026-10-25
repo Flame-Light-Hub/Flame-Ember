@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e12"/>
+      <stop offset="0.3" stop-color="#1a221c"/>
+      <stop offset="0.6" stop-color="#2a2418"/>
+      <stop offset="0.85" stop-color="#181410"/>
+      <stop offset="1" stop-color="#0c0a08"/>
+    </linearGradient>
+    <linearGradient id="shaftH" x1="0.4" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#b8a878" stop-opacity="0.05"/>
+      <stop offset="0.4" stop-color="#806040" stop-opacity="0.45"/>
+      <stop offset="0.75" stop-color="#302010" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#050403" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hazeH" cx="0.55" cy="0.55" r="0.55">
+      <stop offset="0" stop-color="#604830" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#201810" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#040302" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pathH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161410"/>
+      <stop offset="1" stop-color="#050403"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyH)"/>
+  <!-- distant mountains under cold front -->
+  <polygon points="0,200 160,130 320,180 480,90 640,150 800,100 960,160 1120,120 1200,150 1200,750 0,750" fill="#060504" opacity="0.9"/>
+  <polygon points="240,120 480,50 720,140 560,180 300,150" fill="#0a0806" opacity="0.6"/>
+  <!-- volumetric light shafts through heavy cold air -->
+  <polygon points="240,30 420,10 680,750 320,750" fill="url(#shaftH)" opacity="0.7"/>
+  <polygon points="580,60 740,40 900,750 620,750" fill="url(#shaftH)" opacity="0.28"/>
+  <!-- heavier haze for incoming cold rain -->
+  <ellipse cx="620" cy="480" rx="700" ry="260" fill="url(#hazeH)"/>
+  <!-- mid ground -->
+  <polygon points="0,420 200,380 440,430 680,390 920,420 1200,400 1200,750 0,750" fill="#12100e" opacity="0.8"/>
+  <!-- wet road -->
+  <polygon points="160,460 1040,460 1120,750 80,750" fill="url(#pathH)" opacity="0.95"/>
+  <path d="M260 480 Q480 530 700 630 L740 750 L220 750 Z" fill="#141210" opacity="0.5"/>
+  <!-- wet tracks / puddles -->
+  <path d="M340 500 L420 750" stroke="#0c0a08" stroke-width="4" opacity="0.45" fill="none"/>
+  <path d="M500 510 L580 750" stroke="#0c0a08" stroke-width="2.5" opacity="0.35" fill="none"/>
+  <ellipse cx="480" cy="620" rx="40" ry="6" fill="#0a0806" opacity="0.4"/>
+  <!-- small figure on cold wet road -->
+  <g transform="translate(440, 640)">
+    <ellipse cx="0" cy="0" rx="2.2" ry="5" fill="#010101"/>
+    <path d="M-0.9 4.5 L-3.2 30 L3.2 30 L0.9 4.5 Z" fill="#010101"/>
+    <path d="M-1.1 12 L-8 18 L0.2 15" fill="#010101"/>
+    <path d="M1.1 12 L9 17 L0.6 14" fill="#010101"/>
+  </g>
+  <!-- wind-blown dust / rain streaks -->
+  <line x1="300" y1="200" x2="280" y2="380" stroke="#403020" stroke-width="0.8" opacity="0.25"/>
+  <line x1="700" y1="180" x2="680" y2="360" stroke="#403020" stroke-width="0.6" opacity="0.2"/>
+  <line x1="900" y1="220" x2="880" y2="400" stroke="#403020" stroke-width="0.7" opacity="0.18"/>
+</svg>
