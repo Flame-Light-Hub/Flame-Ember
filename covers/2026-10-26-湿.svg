@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="skyW" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1014"/>
+      <stop offset="0.35" stop-color="#1c2418"/>
+      <stop offset="0.65" stop-color="#2a2216"/>
+      <stop offset="0.9" stop-color="#16120c"/>
+      <stop offset="1" stop-color="#080604"/>
+    </linearGradient>
+    <linearGradient id="shaftW" x1="0.35" y1="0" x2="0.55" y2="1">
+      <stop offset="0" stop-color="#c8b890" stop-opacity="0.08"/>
+      <stop offset="0.45" stop-color="#8a6840" stop-opacity="0.5"/>
+      <stop offset="0.8" stop-color="#3a2810" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#060402" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hazeW" cx="0.5" cy="0.6" r="0.6">
+      <stop offset="0" stop-color="#6a5430" stop-opacity="0.4"/>
+      <stop offset="0.55" stop-color="#281c10" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#040302" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="roadW" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1610"/>
+      <stop offset="0.7" stop-color="#0a0806"/>
+      <stop offset="1" stop-color="#040302"/>
+    </linearGradient>
+    <linearGradient id="wet" x1="0" y1="0.3" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2418" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#4a3820" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#1a140c" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#skyW)"/>
+  <!-- distant mountains -->
+  <polygon points="0,220 180,140 340,190 520,100 700,160 860,110 1020,170 1200,140 1200,750 0,750" fill="#070605" opacity="0.92"/>
+  <polygon points="200,150 480,60 740,140 520,200 280,170" fill="#0c0a08" opacity="0.55"/>
+  <!-- volumetric shafts through wet air -->
+  <polygon points="380,0 520,0 680,750 280,750" fill="url(#shaftW)" opacity="0.7"/>
+  <polygon points="620,0 740,0 860,750 540,750" fill="url(#shaftW)" opacity="0.35"/>
+  <ellipse cx="620" cy="420" rx="420" ry="280" fill="url(#hazeW)"/>
+  <!-- wet dirt road reflecting light -->
+  <path d="M 480,750 L 580,420 L 720,280 L 860,180 L 980,140 L 1200,220 L 1200,750 Z" fill="url(#roadW)"/>
+  <path d="M 540,750 L 620,460 L 740,320 L 880,200 L 1000,160 L 1120,200 L 1120,750 Z" fill="url(#wet)" opacity="0.6"/>
+  <!-- small figure silhouette on the wet path -->
+  <g transform="translate(710,480)">
+    <ellipse cx="0" cy="28" rx="18" ry="6" fill="#040302" opacity="0.5"/>
+    <path d="M -6,18 L -4,0 L 4,0 L 6,18 Z" fill="#0a0806"/>
+    <circle cx="0" cy="-8" r="5" fill="#0a0806"/>
+    <path d="M -8,4 L -14,12 L -10,14 Z" fill="#0a0806"/>
+  </g>
+  <!-- dirty foreground mud and puddle edges -->
+  <path d="M 0,620 Q 200,580 400,640 T 800,600 L 1200,680 L 1200,750 L 0,750 Z" fill="#0e0c0a" opacity="0.7"/>
+  <path d="M 200,680 Q 400,640 600,700 T 1000,660" stroke="#3a2a18" stroke-width="2" fill="none" opacity="0.4"/>
+</svg>
