@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="25%" stop-color="#4a3c2c"/>
+      <stop offset="55%" stop-color="#6a5840"/>
+      <stop offset="100%" stop-color="#3a2e24"/>
+    </linearGradient>
+    <radialGradient id="volLight" cx="48%" cy="22%" r="60%">
+      <stop offset="0%" stop-color="#f0e0c8" stop-opacity="0.55"/>
+      <stop offset="35%" stop-color="#d4b898" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#a88868" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6a5840" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="road" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6a5848"/>
+      <stop offset="100%" stop-color="#3a2e24"/>
+    </linearGradient>
+    <filter id="dirty">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="4" result="noise"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.1 0"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <rect width="1200" height="800" fill="url(#volLight)"/>
+  <!-- layered distant mountains, dirty ochre/brown -->
+  <path d="M0 460 L120 300 L260 380 L400 240 L560 360 L720 190 L880 320 L1040 210 L1200 340 L1200 540 L0 540 Z" fill="#4a3c30" opacity="0.6"/>
+  <path d="M0 500 L180 340 L340 420 L500 280 L660 400 L820 260 L980 360 L1200 300 L1200 580 L0 580 Z" fill="#3a3228" opacity="0.75"/>
+  <path d="M0 540 L160 400 L320 480 L480 360 L640 460 L800 340 L960 440 L1200 380 L1200 620 L0 620 Z" fill="#2a2218" opacity="0.85"/>
+  <!-- road in perspective, traveler view -->
+  <path d="M380 800 L600 460 L820 800 Z" fill="url(#road)"/>
+  <path d="M450 800 L600 500 L750 800 Z" fill="#7a6848" opacity="0.3"/>
+  <!-- volumetric light shafts, warmer than yesterday -->
+  <polygon points="640,140 660,140 740,500 560,500" fill="#e8d4b0" opacity="0.16"/>
+  <polygon points="560,120 590,120 700,520 480,520" fill="#f0e0c8" opacity="0.1"/>
+  <polygon points="700,160 720,160 780,480 640,480" fill="#d4c0a0" opacity="0.09"/>
+  <!-- small figure silhouette on the road, facing the light -->
+  <ellipse cx="600" cy="640" rx="20" ry="7" fill="#1a1410" opacity="0.55"/>
+  <path d="M586 640 L590 590 L600 582 L610 590 L614 640 Z" fill="#1a1410"/>
+  <circle cx="600" cy="574" r="8" fill="#1a1410"/>
+  <!-- dirty texture -->
+  <rect width="1200" height="800" filter="url(#dirty)" opacity="0.35"/>
+  <rect width="1200" height="800" fill="#2a2018" opacity="0.1"/>
+</svg>
