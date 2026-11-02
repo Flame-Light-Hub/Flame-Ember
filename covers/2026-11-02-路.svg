@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1218"/>
+      <stop offset="40%" stop-color="#2c241c"/>
+      <stop offset="100%" stop-color="#4a3c30"/>
+    </linearGradient>
+    <linearGradient id="vol" x1="0.7" y1="0.1" x2="0.3" y2="0.9">
+      <stop offset="0%" stop-color="#e8c9a0" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#a08060" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5a4030" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="mtn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3228"/>
+      <stop offset="100%" stop-color="#1e1814"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#4a3e34"/>
+      <stop offset="100%" stop-color="#2a221c"/>
+    </linearGradient>
+    <filter id="dust">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise"/>
+      <feColorMatrix type="matrix" values="0.4 0 0 0 0.2  0 0.3 0 0 0.15  0 0 0.2 0 0.1  0 0 0 0.15 0"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- volumetric light rays -->
+  <polygon points="850,80 920,420 780,420" fill="url(#vol)" opacity="0.7"/>
+  <polygon points="900,60 1020,480 820,480" fill="url(#vol)" opacity="0.45"/>
+  <!-- distant mountains -->
+  <polygon points="0,380 180,220 340,310 520,180 700,290 880,160 1200,340 1200,630 0,630" fill="url(#mtn)" opacity="0.85"/>
+  <polygon points="0,420 240,280 480,360 720,240 960,330 1200,390 1200,630 0,630" fill="#2a221c" opacity="0.6"/>
+  <!-- road -->
+  <polygon points="480,630 560,420 640,630" fill="url(#road)"/>
+  <polygon points="500,630 580,460 660,630" fill="#3a3228" opacity="0.5"/>
+  <!-- ground dirt -->
+  <rect x="0" y="480" width="1200" height="150" fill="#3c342c" opacity="0.4"/>
+  <!-- small figure silhouette on road -->
+  <g transform="translate(590,480)">
+    <path d="M0,40 L-6,20 L-4,8 L4,8 L6,20 L0,40 Z" fill="#1a1410"/>
+    <circle cx="0" cy="4" r="5" fill="#1a1410"/>
+  </g>
+  <!-- dust overlay -->
+  <rect width="1200" height="630" filter="url(#dust)" opacity="0.25"/>
+  <!-- subtle light edges -->
+  <path d="M0,0 L1200,0 L1200,100 Q600,180 0,80 Z" fill="#d4b48a" opacity="0.08"/>
+</svg>
