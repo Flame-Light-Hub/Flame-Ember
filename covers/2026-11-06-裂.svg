@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07090c"/>
+      <stop offset="25%" stop-color="#16120e"/>
+      <stop offset="55%" stop-color="#2e261e"/>
+      <stop offset="100%" stop-color="#3c342a"/>
+    </linearGradient>
+    <linearGradient id="vol" x1="0.6" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#d8c090" stop-opacity="0.5"/>
+      <stop offset="35%" stop-color="#b09060" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6a5840" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="45%" cy="65%" r="55%">
+      <stop offset="0%" stop-color="#5a4a3a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2a2218" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- Distant dirty mountains -->
+  <path d="M0 400 Q180 260 380 360 Q560 200 760 320 Q960 240 1200 390 V630 H0 Z" fill="#221c16" opacity="0.95"/>
+  <path d="M0 460 Q280 310 520 410 Q780 290 1200 440 V630 H0 Z" fill="#342c24" opacity="0.75"/>
+  <!-- Road with slight crack suggestion -->
+  <path d="M460 630 L510 400 L690 400 L740 630 Z" fill="#14110e"/>
+  <path d="M485 630 L530 425 L670 425 L715 630 Z" fill="#2a241c"/>
+  <path d="M595 430 L605 560 L610 560 L600 430 Z" fill="#0a0806" opacity="0.6"/>
+  <!-- Volumetric light breaking through -->
+  <polygon points="150,0 240,0 620,630 480,630" fill="url(#vol)" opacity="0.55"/>
+  <polygon points="780,0 900,0 980,630 820,630" fill="url(#vol)" opacity="0.38"/>
+  <!-- Small figure silhouette -->
+  <ellipse cx="590" cy="505" rx="11" ry="26" fill="#080604"/>
+  <circle cx="590" cy="482" r="7" fill="#080604"/>
+  <!-- Haze and ground texture -->
+  <rect width="1200" height="630" fill="url(#haze)"/>
+  <line x1="0" y1="550" x2="1200" y2="532" stroke="#4a3e32" stroke-width="1" opacity="0.28"/>
+  <line x1="0" y1="585" x2="1200" y2="570" stroke="#3a3228" stroke-width="0.7" opacity="0.22"/>
+</svg>
