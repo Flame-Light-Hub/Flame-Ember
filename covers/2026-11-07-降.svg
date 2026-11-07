@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0c10"/>
+      <stop offset="30%" stop-color="#1a1814"/>
+      <stop offset="60%" stop-color="#2c241c"/>
+      <stop offset="100%" stop-color="#3a3228"/>
+    </linearGradient>
+    <linearGradient id="vol" x1="0.7" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#c8b080" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#a08050" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#5a4830" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="50%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#4a3c2c" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1a140e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- Distant dirty mountains -->
+  <path d="M0 280 L180 180 L320 240 L480 140 L640 200 L820 120 L1000 190 L1200 160 L1200 630 L0 630 Z" fill="#2a2218"/>
+  <path d="M0 320 L200 220 L380 280 L550 190 L720 250 L900 170 L1100 230 L1200 200 L1200 630 L0 630 Z" fill="#221c14" opacity="0.8"/>
+  <!-- Road -->
+  <path d="M520 630 L580 420 L620 300 L680 180" fill="none" stroke="#3a3228" stroke-width="40" stroke-linecap="round"/>
+  <path d="M540 630 L590 430 L625 310 L670 200" fill="none" stroke="#4a4034" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+  <!-- Volumetric light -->
+  <polygon points="700,0 820,0 620,630 480,630" fill="url(#vol)" opacity="0.7"/>
+  <!-- Haze -->
+  <ellipse cx="600" cy="420" rx="400" ry="180" fill="url(#haze)"/>
+  <!-- Small figure silhouette -->
+  <path d="M610 480 L618 450 L622 480 L628 455 L632 480 Z" fill="#0a0806"/>
+  <circle cx="620" cy="445" r="6" fill="#0a0806"/>
+  <!-- Ground texture suggestion -->
+  <path d="M0 500 Q300 480 600 510 T1200 490 L1200 630 L0 630 Z" fill="#1a140e" opacity="0.5"/>
+</svg>
