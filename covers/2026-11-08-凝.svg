@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07090c"/>
+      <stop offset="25%" stop-color="#12100e"/>
+      <stop offset="55%" stop-color="#1e1a16"/>
+      <stop offset="100%" stop-color="#2e2820"/>
+    </linearGradient>
+    <linearGradient id="vol" x1="0.2" y1="0.1" x2="0.8" y2="0.9">
+      <stop offset="0%" stop-color="#d4c4a0" stop-opacity="0.35"/>
+      <stop offset="35%" stop-color="#a89060" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3a2e20" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="40%" cy="65%" r="55%">
+      <stop offset="0%" stop-color="#5a4a38" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0e0c0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- Distant cold mountains -->
+  <path d="M0 250 L140 160 L280 210 L420 130 L560 190 L700 110 L840 170 L980 140 L1200 180 L1200 630 L0 630 Z" fill="#1a1612"/>
+  <path d="M0 290 L160 200 L320 260 L480 170 L640 230 L800 150 L960 200 L1200 220 L1200 630 L0 630 Z" fill="#14110e" opacity="0.75"/>
+  <!-- Road bending into haze -->
+  <path d="M480 630 L540 410 L600 280 L680 160" fill="none" stroke="#2a241c" stroke-width="48" stroke-linecap="round"/>
+  <path d="M500 630 L555 420 L610 290 L670 180" fill="none" stroke="#3a3228" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+  <!-- Volumetric light from low left -->
+  <polygon points="200,0 380,0 720,630 420,630" fill="url(#vol)" opacity="0.65"/>
+  <!-- Haze and frost suggestion -->
+  <ellipse cx="520" cy="400" rx="380" ry="160" fill="url(#haze)"/>
+  <ellipse cx="700" cy="280" rx="200" ry="80" fill="#4a3c2c" opacity="0.15"/>
+  <!-- Small figure, thinner, facing light -->
+  <path d="M590 500 L596 470 L600 500 L606 475 L610 500 Z" fill="#060504"/>
+  <circle cx="600" cy="462" r="5.5" fill="#060504"/>
+  <!-- Ground dirty texture -->
+  <path d="M0 480 Q280 460 560 500 T1200 470 L1200 630 L0 630 Z" fill="#0f0c0a" opacity="0.55"/>
+</svg>
