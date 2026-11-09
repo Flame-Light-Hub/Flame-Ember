@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05070a"/>
+      <stop offset="30%" stop-color="#1a160f"/>
+      <stop offset="60%" stop-color="#2c2418"/>
+      <stop offset="100%" stop-color="#3a2e22"/>
+    </linearGradient>
+    <linearGradient id="vol" x1="0.1" y1="0.0" x2="0.7" y2="0.85">
+      <stop offset="0%" stop-color="#e8d8b0" stop-opacity="0.42"/>
+      <stop offset="40%" stop-color="#b8a070" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#2a2218" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="35%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#6a5a42" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0c0a08" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#sky)"/>
+  <!-- Distant dirty mountains, slightly different ridges -->
+  <path d="M0 220 L180 140 L340 190 L520 100 L700 160 L880 120 L1040 170 L1200 150 L1200 630 L0 630 Z" fill="#18140f"/>
+  <path d="M0 280 L200 190 L380 240 L560 160 L740 210 L920 170 L1200 200 L1200 630 L0 630 Z" fill="#12100c" opacity="0.8"/>
+  <!-- Road bending toward brighter left-low light -->
+  <path d="M420 630 L500 400 L580 250 L640 140" fill="none" stroke="#2c241c" stroke-width="52" stroke-linecap="round"/>
+  <path d="M445 630 L520 410 L595 260 L650 155" fill="none" stroke="#3e3428" stroke-width="16" stroke-linecap="round" opacity="0.6"/>
+  <!-- Volumetric light from low left, stronger -->
+  <polygon points="80,0 320,0 680,630 280,630" fill="url(#vol)" opacity="0.7"/>
+  <!-- Haze and thin dust -->
+  <ellipse cx="480" cy="420" rx="420" ry="180" fill="url(#haze)"/>
+  <ellipse cx="620" cy="260" rx="180" ry="70" fill="#5a4a38" opacity="0.12"/>
+  <!-- Small thin figure facing light, mid-road -->
+  <path d="M575 510 L580 475 L584 510 L590 480 L594 510 Z" fill="#050403"/>
+  <circle cx="585" cy="468" r="5" fill="#050403"/>
+  <!-- Faint distant figure suggestion far on road -->
+  <circle cx="620" cy="300" r="2.5" fill="#1a1612" opacity="0.4"/>
+</svg>
