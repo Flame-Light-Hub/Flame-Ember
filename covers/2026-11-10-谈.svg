@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1520;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#3d2e28;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b4a3a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="light" x1="70%" y1="30%" x2="50%" y2="80%">
+      <stop offset="0%" style="stop-color:#f4e4c8;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#f4e4c8;stop-opacity:0" />
+    </linearGradient>
+    <filter id="dust">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <!-- Distant mountains dirty brown -->
+  <path d="M0 420 Q200 280 400 380 Q600 220 800 340 Q1000 260 1200 390 L1200 800 L0 800 Z" fill="#4a3a32" opacity="0.9"/>
+  <path d="M0 480 Q300 360 600 440 Q900 320 1200 460 L1200 800 L0 800 Z" fill="#5c4a40" opacity="0.7"/>
+  <!-- Road -->
+  <path d="M480 800 Q540 600 580 480 Q620 380 700 320 L720 310 Q680 400 640 520 Q600 650 560 800 Z" fill="#3a322c" filter="url(#dust)"/>
+  <!-- Volumetric light rays -->
+  <polygon points="850,180 920,800 780,800" fill="url(#light)" opacity="0.6"/>
+  <polygon points="880,200 960,800 820,800" fill="#e8d8b8" opacity="0.15"/>
+  <!-- Small figure silhouette -->
+  <path d="M640 560 L645 530 L650 560 L655 545 L660 560 L650 570 L640 560" fill="#1a1410"/>
+  <circle cx="652" cy="525" r="6" fill="#1a1410"/>
+  <!-- Dust haze -->
+  <rect width="1200" height="800" fill="#8a6a50" opacity="0.08"/>
+</svg>
