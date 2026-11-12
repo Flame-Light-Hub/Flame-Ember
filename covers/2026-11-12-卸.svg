@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#141210;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#3a322c;stop-opacity:1" />
+      <stop offset="65%" style="stop-color:#6a5244;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8a6a52;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="light" x1="55%" y1="15%" x2="40%" y2="80%">
+      <stop offset="0%" style="stop-color:#f4e4b0;stop-opacity:0.6" />
+      <stop offset="45%" style="stop-color:#e0c080;stop-opacity:0.28" />
+      <stop offset="100%" style="stop-color:#d0a860;stop-opacity:0" />
+    </linearGradient>
+    <filter id="dust">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <!-- Distant dirty mountains -->
+  <path d="M0 380 Q200 220 420 340 Q640 180 860 300 Q1040 220 1200 360 L1200 800 L0 800 Z" fill="#4a3c32" opacity="0.92"/>
+  <path d="M0 450 Q300 320 580 410 Q860 280 1200 420 L1200 800 L0 800 Z" fill="#5c4a3c" opacity="0.7"/>
+  <path d="M0 510 Q400 400 750 480 Q1100 360 1200 490 L1200 800 L0 800 Z" fill="#3e322a" opacity="0.55"/>
+  <!-- Road bending into the light, dusty -->
+  <path d="M380 800 Q450 640 490 500 Q530 380 610 280 L640 250 Q590 370 550 500 Q500 660 440 800 Z" fill="#2e2824" filter="url(#dust)"/>
+  <!-- Volumetric light shafts -->
+  <polygon points="720,80 860,800 640,800" fill="url(#light)" opacity="0.65"/>
+  <polygon points="760,110 900,800 680,800" fill="#f0d8a0" opacity="0.2"/>
+  <polygon points="680,100 820,800 600,800" fill="#e8c888" opacity="0.14"/>
+  <!-- Small traveler silhouette, unloading weight, facing the light -->
+  <path d="M560 620 L555 680 L548 720 L562 722 L568 680 L572 640 Z" fill="#1a1614"/>
+  <circle cx="564" cy="600" r="8" fill="#1a1614"/>
+  <!-- Dropped load / sack on the ground -->
+  <ellipse cx="520" cy="730" rx="28" ry="10" fill="#2a2420" opacity="0.8"/>
+  <!-- Dust haze low -->
+  <rect x="0" y="680" width="1200" height="120" fill="#5a4a3c" opacity="0.15"/>
+</svg>
