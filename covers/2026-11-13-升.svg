@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e1214;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#2a241e;stop-opacity:1" />
+      <stop offset="55%" style="stop-color:#5a4638;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7a5e48;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rise" x1="40%" y1="90%" x2="60%" y2="10%">
+      <stop offset="0%" style="stop-color:#e8c878;stop-opacity:0.1" />
+      <stop offset="40%" style="stop-color:#f0d890;stop-opacity:0.35" />
+      <stop offset="100%" style="stop-color:#fff4c0;stop-opacity:0.7" />
+    </linearGradient>
+    <filter id="dust">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="4" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <!-- Distant dirty mountains rising into haze -->
+  <path d="M0 420 Q180 280 380 360 Q620 180 840 320 Q1020 240 1200 380 L1200 800 L0 800 Z" fill="#3e322a" opacity="0.9"/>
+  <path d="M0 480 Q280 340 560 440 Q820 300 1200 460 L1200 800 L0 800 Z" fill="#4e3e34" opacity="0.65"/>
+  <path d="M0 540 Q360 420 720 500 Q980 380 1200 520 L1200 800 L0 800 Z" fill="#2a221c" opacity="0.5"/>
+  <!-- Road climbing toward the light, dusty rise -->
+  <path d="M420 800 Q480 620 520 480 Q560 340 640 220 L670 180 Q600 340 560 500 Q510 650 470 800 Z" fill="#322a24" filter="url(#dust)"/>
+  <!-- Volumetric light rising from below -->
+  <polygon points="580,180 780,800 480,800" fill="url(#rise)" opacity="0.75"/>
+  <polygon points="620,220 820,800 520,800" fill="#f4e0a0" opacity="0.22"/>
+  <polygon points="540,200 740,800 440,800" fill="#e8d080" opacity="0.15"/>
+  <!-- Small traveler silhouette ascending, facing the rising light -->
+  <path d="M580 580 L575 640 L568 700 L582 702 L588 640 L592 590 Z" fill="#141210"/>
+  <circle cx="584" cy="555" r="9" fill="#141210"/>
+  <!-- Dust kicked up by steps -->
+  <ellipse cx="560" cy="720" rx="40" ry="12" fill="#4a3c32" opacity="0.4"/>
+  <!-- Low haze -->
+  <rect x="0" y="700" width="1200" height="100" fill="#5a4a3c" opacity="0.12"/>
+</svg>
