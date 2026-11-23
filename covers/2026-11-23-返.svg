@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c2416"/>
+      <stop offset="40%" stop-color="#5a4a2a"/>
+      <stop offset="100%" stop-color="#8a6a3a"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0.7" y1="0.2" x2="0.5" y2="0.8">
+      <stop offset="0%" stop-color="#f0d080" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#d0a050" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <polygon points="0,500 200,350 400,420 600,300 800,380 1000,280 1200,400 1200,800 0,800" fill="#3a2a1a" opacity="0.9"/>
+  <polygon points="100,450 300,320 500,380 700,280 900,350 1100,300 1200,420 1200,800 0,800" fill="#4a3a2a" opacity="0.7"/>
+  <path d="M0 650 Q300 620 600 640 T1200 630 L1200 800 L0 800 Z" fill="#6a5a3a"/>
+  <path d="M200 620 Q400 600 600 610 T1000 600 L1000 680 L200 680 Z" fill="#8a6a3a" opacity="0.6"/>
+  <line x1="850" y1="150" x2="600" y2="650" stroke="#f0d080" stroke-width="40" opacity="0.3"/>
+  <line x1="900" y1="180" x2="650" y2="650" stroke="#f0d080" stroke-width="20" opacity="0.2"/>
+  <circle cx="600" cy="580" r="8" fill="#1a1208"/>
+  <rect x="595" y="560" width="10" height="25" fill="#1a1208"/>
+  <text x="600" y="750" font-size="24" fill="#d0c0a0" text-anchor="middle" opacity="0.5">返</text>
+</svg>
